@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remind Me App - Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+<nav class="bg-white p-4 shadow-md flex justify-between items-center">
+  <div class="text-xl font-semibold text-blue-600">Remindme</div>
+  
+  <!-- Hamburger Menu (Mobile) -->
+  <div class="md:hidden">
+    <button id="menu-toggle" class="focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Desktop Menu -->
+  <ul id="menu" class="hidden md:flex space-x-8 text-gray-700">
+    <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+    <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+    <li><a href="#about" class="hover:text-blue-600">About us</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="flex flex-col md:flex-row items-center justify-between p-8 md:p-20">
+    <!-- Teks Kiri -->
+    <div class="md:w-1/2 space-y-4 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold leading-snug">Manage Schedule and Task Easy</h1>
+      <p class="text-lg text-gray-600">
+        Create and organize schedule and task deadline become better, easy manage and certainly no longer lagging behind schedule of activities and task.
+      </p>
+      <button class="bg-blue-500 text-white px-6 py-3 rounded mt-4 hover:bg-blue-600">Download App</button>
+    </div>
+
+    <!-- Gambar Ponsel -->
+    <div class="md:w-1/2 mt-8 md:mt-0 relative flex justify-center items-center">
+      <div class="relative w-full max-w-xs">
+        <!-- Background Ponsel -->
+        <div class="bg-blue-100 rounded-3xl p-4 shadow-lg">
+          <img src="1task 2.png" alt="App UI" class="rounded-lg">
+        </div>
+
+        <!-- Badge dan Elemen UI -->
+        <div class="absolute top-0 left-0 transform -translate-x-6 -translate-y-4 bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">Easy to use</div>
+        <div class="absolute top-10 right-0 transform translate-x-6 bg-blue-500 text-white px-3 py-1 rounded-lg text-sm">An interesting UI</div>
+        <div class="absolute bottom-0 left-0 transform -translate-x-6 translate-y-6 bg-white text-center p-2 rounded-lg shadow-md">
+          <p class="text-gray-600 text-xs">User Download</p>
+          <p class="text-blue-500 text-xl font-bold">50.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Features Section -->
+<section id="features" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8">
+        
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="bg-blue-100 p-4 rounded-full">
+            <img src="uim_schedule.png" alt="Set a better deadline tasks" class="w-10 h-10">
+          </div>
+          <h3 class="text-xl font-semibold">Set a better deadline tasks</h3>
+          <p class="text-gray-600">You can make your duty deadlines better and more orderly</p>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="bg-blue-100 p-4 rounded-full">
+            <img src="uim_layer-group.png" alt="Manage the tasks so easily" class="w-10 h-10">
+          </div>
+          <h3 class="text-xl font-semibold">Manage the tasks so easily</h3>
+          <p class="text-gray-600">You can manage the deadlines and the schedule becomes easy</p>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="bg-blue-100 p-4 rounded-full">
+            <img src="ri_notification-fill.png" alt="Wouldn’t miss notifications" class="w-10 h-10">
+          </div>
+          <h3 class="text-xl font-semibold">Wouldn’t miss notifications</h3>
+          <p class="text-gray-600">Of course you will always get the tasks and schedule notifications</p>
+        </div>
+</section>
+
+<!-- Container -->
+<div class="max-w-5xl mx-auto p-6 space-y-8">
+    
+  <!-- Section: Create New Task Image & Features Text -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Image: Create New Task -->
+      <div class="rounded-lg shadow-md overflow-hidden">
+          <img src="Image.png" alt="Create New Task" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Text: Features Description -->
+      <div class="flex flex-col justify-center">
+          <h3 class="text-2xl font-semibold text-gray-800">Set up task and schedule with the best features</h3>
+          <p class="text-gray-600 mt-2">
+              The best feature makes you better, with the latest technology to meet your needs. Of course, with such features as organizing schedules and leading assignments, it will make you easier, so get the application now!
+          </p>
+      </div>
+  </div>
+
+  <!-- Section: Notification Description & Task List Image -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Text: Notification Description -->
+      <div class="flex flex-col justify-center">
+          <h3 class="text-2xl font-semibold text-gray-800">Get the highest priority application notification</h3>
+          <p class="text-gray-600 mt-2">
+              The best feature makes you better, with the latest technology to meet your needs. Of course, with such features as organizing schedules and leading assignments, it will make you easier, so get the application now!
+          </p>
+      </div>
+
+      <!-- Image: Task List & Notifications -->
+      <div class="rounded-lg shadow-md overflow-hidden">
+          <img src="Image (1).png" alt="Task List and Notifications" class="w-full h-auto object-cover">
+      </div>
+  </div>
+</div>
+
+<!-- Container untuk Section Download App -->
+<div class="bg-blue-500 relative h-64 rounded-xl flex flex-col items-center justify-center text-white overflow-hidden p-8">
+  <!-- Lingkaran Dekoratif Latar Belakang -->
+  <div class="absolute inset-0 flex justify-center items-center">
+      <!-- Lingkaran besar -->
+      <div class="w-96 h-96 bg-blue-400 opacity-30 rounded-full absolute top-16 -left-24"></div>
+      <!-- Lingkaran sedang -->
+      <div class="w-64 h-64 bg-blue-600 opacity-30 rounded-full absolute -top-20 left-20"></div>
+  </div>
+
+  <!-- Download -->
+  <h2 class="relative text-2xl font-semibold text-center mb-4">
+    Download an app now and the various benefits you will get immediately
+</h2>
+
+<!-- Tombol Download dan About -->
+<div class="relative flex space-x-4">
+    <!-- Tombol Download App -->
+    <button class="bg-white text-blue-600 font-semibold py-2 px-4 rounded-full shadow-md hover:bg-blue-100 transition">
+        Download App
+    </button>
+    <!-- Tombol About App -->
+    <button class="bg-transparent border-2 border-white text-white font-semibold py-2 px-4 rounded-full hover:bg-white hover:text-blue-600 transition">
+        About App
+    </button>
+</div>
+</div>
+
+<div class="bg-white p-8 md:p-12 lg:p-16">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start space-y-8 md:space-y-0">
+      <!-- Left Side: Profile Pictures with Dotted Line Path -->
+      <div class="relative w-80 h-80 md:w-96 md:h-96 flex items-center justify-center">
+          <!-- Dotted Line Path -->
+          <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 80,80 Q 130,20, 180,80 T 280,80 T 180,180 T 80,280 T 180,280" stroke="#60A5FA" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+          </svg>
+
+          <!-- Profile Pictures Positioned Along Path -->
+          <!-- Top Profile -->
+          <div class="absolute top-4 left-1/4 bg-white p-1 rounded-full">
+              <img class="w-16 h-16 rounded-full border-2 border-green-400" src="Rectangle 16.png" alt="User 1">
+              <span class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></span>
+          </div>
+          
+          <!-- Middle Left Profile -->
+          <div class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-1 rounded-full">
+              <img class="w-16 h-16 rounded-full border-2 border-green-400" src="Rectangle 15.png" alt="User 2">
+              <span class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></span>
+          </div>
+
+          <!-- Center Right Profile (Main) -->
+          <div class="absolute top-1/3 right-4 transform translate-y-2 bg-white p-1 rounded-full">
+              <img class="w-24 h-24 rounded-full border-2 border-green-400" src="Rectangle 13.png" alt="Main User">
+              <span class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></span>
+          </div>
+
+          <!-- Bottom Profile -->
+          <div class="absolute bottom-4 left-1/3 bg-white p-1 rounded-full">
+              <img class="w-16 h-16 rounded-full border-2 border-green-400" src="Rectangle 14.png" alt="User 4">
+              <span class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></span>
+          </div>
+      </div>
+
+      <!-- Right Side: Testimonial Content -->
+      <div class="md:ml-10 md:w-1/2">
+          <!-- Title -->
+          <div class="flex items-center mb-4">
+              <div class="flex-shrink-0 bg-blue-100 p-2 rounded-full">
+                  <span class="text-blue-500 font-bold">R</span>
+              </div>
+              <h2 class="text-2xl font-semibold text-gray-800 ml-4">What do they think</h2>
+          </div>
+
+          <!-- Testimonial Text and User Details -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+              <div class="flex items-center space-x-4 mb-4">
+                  <img class="w-12 h-12 rounded-full border-2 border-gray-200" src="Profile.png" alt="User Icon">
+                  <div>
+                      <h3 class="text-lg font-medium text-gray-900">Samantha Sench</h3>
+                      <p class="text-sm text-gray-500">Student at University</p>
+                  </div>
+              </div>
+              <blockquote class="text-gray-600 italic"> 
+                  “ Hi, it’s Samantha. After using it made me a lot of benefits, starting with convenience of setting a deadline of tasks and schedule after that the app is very simple using. “
+              </blockquote>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <div class="flex justify-start mt-4 space-x-4 text-blue-500">
+              <button class="p-2 rounded-full border border-gray-300 hover:bg-gray-100">
+                  <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+              </button>
+              <button class="p-2 rounded-full border border-gray-300 hover:bg-gray-100">
+                  <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+              </button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<footer class="bg-white py-10 border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <!-- Branding Section -->
+      <div>
+          <div class="flex items-center space-x-2 mb-4">
+              <!-- Icon (replace with an actual icon/image as needed) -->
+              <div class="bg-blue-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 1.75a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0V2.5A.75.75 0 0112 1.75zM12 17.25a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5a.75.75 0 01.75-.75zM17.25 12a.75.75 0 01.75.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM4.5 12.75a.75.75 0 00-.75-.75H1.25a.75.75 0 000 1.5h2.5a.75.75 0 00.75-.75zM16.06 8.47a.75.75 0 011.06-1.06l1.77 1.77a.75.75 0 01-1.06 1.06l-1.77-1.77zM6.17 18.36a.75.75 0 011.06-1.06l1.77 1.77a.75.75 0 11-1.06 1.06l-1.77-1.77zM4.94 6.17a.75.75 0 111.06-1.06l1.77 1.77a.75.75 0 11-1.06 1.06L4.94 6.17zM18.83 16.06a.75.75 0 111.06-1.06l1.77 1.77a.75.75 0 11-1.06 1.06l-1.77-1.77z" />
+                  </svg>
+              </div>
+              <!-- Brand Name -->
+              <h1 class="text-2xl font-semibold text-gray-800">Remind<span class="text-blue-500">me</span></h1>
+          </div>
+          <p class="text-gray-500 text-sm">
+              Task deadlines and scheduling applications with various benefits and advantages
+          </p>
+      </div>
+
+      <!-- Sitemaps Section -->
+      <div>
+          <h2 class="text-lg font-semibold text-gray-800 mb-4">Sitemaps</h2>
+          <ul class="text-gray-600 space-y-2">
+              <li><a href="#" class="hover:text-blue-500">Home</a></li>
+              <li><a href="#" class="hover:text-blue-500">Features</a></li>
+              <li><a href="#" class="hover:text-blue-500">About Us</a></li>
+          </ul>
+      </div>
+
+      <!-- Advantages Section -->
+      <div>
+          <h2 class="text-lg font-semibold text-gray-800 mb-4">Advantages</h2>
+          <ul class="text-gray-600 space-y-2">
+              <li>Set Task Better</li>
+              <li>Easy Manage</li>
+              <li>Get Notification</li>
+          </ul>
+      </div>
+
+      <!-- Follow Us Section -->
+      <div>
+          <h2 class="text-lg font-semibold text-gray-800 mb-4">Follow Us</h2>
+          <div class="flex space-x-4 text-blue-500">
+              <a href="#" aria-label="Facebook" class="hover:text-blue-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M22 12a10 10 0 10-11.97 9.95V14.89H8v-2.9h2.03v-2.1c0-2.03 1.22-3.14 3.08-3.14.89 0 1.82.16 1.82.16v2h-1.02c-1 0-1.31.63-1.31 1.27v1.84H15l-.4 2.9h-2.04v7.07A10 10 0 0022 12z"/>
+                  </svg>
+              </a>
+              <a href="#" aria-label="Twitter" class="hover:text-blue-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23 2.999c-.833.369-1.729.619-2.668.732.961-.576 1.695-1.487 2.04-2.572-.897.532-1.888.92-2.948 1.127a5.112 5.112 0 00-8.725 4.651A14.48 14.48 0 011.67 2.899a5.093 5.093 0 001.578 6.787 5.09 5.09 0 01-2.317-.642v.062a5.107 5.107 0 004.096 5.006 5.108 5.108 0 01-2.305.087 5.11 5.11 0 004.77 3.538 10.25 10.25 0 01-7.574 2.131A14.44 14.44 0 008.105 22c9.146 0 14.307-7.716 14.307-14.407 0-.218-.005-.437-.015-.653A10.17 10.17 0 0023 2.999z"/>
+                  </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="hover:text-blue-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.271c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.271h-3v-4.5c0-1.083-.417-2-1.5-2s-1.5.917-1.5 2v4.5h-3v-9h3v1.234c.464-.704 1.5-1.234 2.5-1.234 2.4 0 4 1.6 4 4v5z"/>
+                  </svg>
+              </a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
